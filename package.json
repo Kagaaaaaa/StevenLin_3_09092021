@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Kagaaaaaa/StevenLin_3_09092021/issues"
   },
-  "homepage": "https://github.com/Kagaaaaaa/StevenLin_3_09092021#readme"
+  "homepage": "https://github.com/Kagaaaaaa/StevenLin_3_09092021#readme",
+  "dependencies": {
+    "sass": "^1.42.1"
+  }
 }
