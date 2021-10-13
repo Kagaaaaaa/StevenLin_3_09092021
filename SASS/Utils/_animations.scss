@@ -1,0 +1,15 @@
+ .recipes:hover i{
+        transform: rotate(360deg);
+        transition: 500ms 200ms ease;
+ }
+
+.recipes:hover .recipes__check_animation{
+     margin-right: 0 !important; 
+     transition: 500ms ease-in-out;
+ }
+
+ .fas:hover{
+    transition: 5000ms ease-in-out;
+    background: -webkit-linear-gradient(0deg, rgba(156,89,220,1) 13%, rgba(255,121,218,1) 79%);
+ }
+   
