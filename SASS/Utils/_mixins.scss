@@ -1,0 +1,10 @@
+@mixin title_typo{
+    font-family: $secondary-font-family;
+    text-align: center;
+}
+
+@mixin secondary_typo{
+    font-family: $primary-font-family;
+    text-align: center;
+}
+

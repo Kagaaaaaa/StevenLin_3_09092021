@@ -1,9 +1,10 @@
-@import './base/_base';
 @import './Utils/mixins';
 @import './Utils/variables';
 @import './base/typography';
+@import './Utils/animations';
 @import './Layout/header';
 @import './Components/buttons';
 @import './Layout/footer';
-
-
+@import './Layout/nav';
+@import './Layout/container';
+@import './base/_base';
