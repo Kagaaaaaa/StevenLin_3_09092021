@@ -51,3 +51,22 @@ nav{
         }
     }
 }
+
+@media screen and (min-width: 1024px){
+    nav{
+        padding: 30px 0;
+        span{
+            display: block;
+            text-align: center;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                @media screen and (min-width: 1440px){
+                    width: 25%;
+                }
+            }
+        }
+    }
+}

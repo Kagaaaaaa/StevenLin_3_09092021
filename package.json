@@ -4,7 +4,7 @@
   "description": "ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded",
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed",
     "prefix": "postcss css/styles.css -use autoprefixer -d CSS/prefixed/"
   },
   "repository": {

@@ -47,8 +47,7 @@
                 cursor: pointer;
             }
             .fas{
-                background-clip: text;
-                -webkit-background-clip: text;
+                -webkit-background-clip: text !important;
                 -webkit-text-fill-color: transparent;
                 opacity: 0;
                 background: -webkit-linear-gradient(0deg, rgba(156,89,220,1) 13%, rgba(255,121,218,1) 79%);
@@ -106,7 +105,7 @@
             right: 35px;
         }
         .fas{
-            -webkit-background-clip: text;
+            -webkit-background-clip: text !important;
             -webkit-text-fill-color: transparent;
             opacity: 0;
             background: -webkit-linear-gradient(0deg, rgba(156,89,220,1) 13%, rgba(255,121,218,1) 79%);
@@ -120,6 +119,16 @@
         margin: auto;
         display: flex;
         flex-direction: column;
+        > p{
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .underline{
+            width: 42px;
+            height: 4px;
+            background: $third-color;
+            margin-bottom: 17px;
+        }
         .recipes{
             background-color: #FFFFFF;
             border-radius: 15px;
@@ -200,15 +209,45 @@
 }
 
 @media screen and (min-width: 1024px){
+    #main_container{
+        .restaurant_wrapper{
+            width: 90%;
+            margin: auto;
+            display: flex;            
+        }
+        .restaurants_card{
+            height: 400px;
+            width: 23%;
+            &__newpopup{
+                bottom: 340px;
+            }
+            a{
+                img{
+                    height: 81%;
+                }
+            }
+        }
+    }
 
     .restaurant_name{
-        .starters, .main_courses, .desserts{
-            .recipes{
-                &__texts{
-                    width: 95%;
-                }
-            }    
-        }        
+        .restaurant_header{
+            i{
+                top: 46px;
+            }
+        }
+        >div{
+            display: flex;
+            .starters, .main_courses, .desserts{
+                margin-top: 20px;
+                width: 28%;
+                .recipes{
+                    &__texts{
+                        width: 85%;
+                    }
+                }    
+            }        
+        }
+        
     }
 }
 
