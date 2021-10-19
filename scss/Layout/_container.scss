@@ -243,6 +243,9 @@
                 .recipes{
                     &__texts{
                         width: 85%;
+                        @media screen and (min-width: 1440px){
+                            width: 92%;
+                        }
                     }
                 }    
             }        
