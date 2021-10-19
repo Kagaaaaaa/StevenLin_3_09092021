@@ -1,0 +1,92 @@
+ .recipes:hover i{
+        transform: rotate(360deg);
+        transition: 500ms 200ms ease;
+ }
+
+.recipes:hover .recipes__check_animation{
+     margin-right: 0 !important; 
+     transition: 500ms ease-in-out;
+ }
+
+ .fas:hover{
+    transition: 1000ms ease-in-out;
+    opacity: 1 !important;
+ }
+
+ button:hover, .button:hover{
+   background: linear-gradient(352deg, rgba(156,89,220,0.9) 33%, rgba(255,121,218,0.9) 80%);
+   box-shadow: 2px 6px 10px 6px #00000036;
+   transition: all 250ms ease;
+ }
+
+@keyframes loading{
+   0%{
+     transform: translateY(0%)
+   }
+
+   35%{
+     transform: translateY(40%);
+   }
+
+   65%{
+     transform: translateY(-40%)
+   }
+
+   90%{
+     transform: translateY(0%);
+   }
+
+   100%{
+     transform: translateY(0%);
+   }
+}
+
+@keyframes disapear{
+  0%{
+    z-index: 2;
+    opacity: 1;
+  }
+
+  100%{
+    z-index: -1;
+    opacity: 0;
+  }
+}
+
+@keyframes menu_slide{
+  0%{
+    opacity: 0;
+    transform: translateY(40%);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes name_opacity{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.starters, .main_courses, .desserts{
+  animation: name_opacity 1500ms 4700ms forwards ease;
+  div:nth-child(2){
+    animation: menu_slide 1500ms 4700ms forwards ease;
+  }
+  div:nth-child(3){
+    animation: menu_slide 1500ms 4850ms forwards ease;
+  }
+  div:nth-child(4){
+    animation: menu_slide 1500ms 5000ms forwards ease;
+  }
+  div:nth-child(5){
+    animation: menu_slide 1500ms 5150ms forwards ease;
+  }
+}

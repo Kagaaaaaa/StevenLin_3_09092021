@@ -1,0 +1,36 @@
+button,{
+    background: rgb(156,89,220);
+    background: linear-gradient(352deg, rgba(156,89,220,1) 33%, rgba(255,121,218,1) 80%); 
+    box-shadow: $basic_shadow;
+    border-radius: 25px;
+    border: 1px solid $primary-color;
+    font-family: $primary-font-family;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 250ms ease;
+    @media screen and (min-width: 425px){
+        width: 225px !important;
+    }
+}
+
+.button{
+    background: rgb(156,89,220);
+    background: linear-gradient(352deg, rgba(156,89,220,1) 33%, rgba(255,121,218,1) 80%); 
+    box-shadow: $basic_shadow;
+    border-radius: 25px;
+    border: 1px solid $primary-color;
+    font-family: $primary-font-family;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 250ms ease;
+    text-align: center;
+    @media screen and (min-width: 425px){
+        width: 225px !important;
+    }  
+}
